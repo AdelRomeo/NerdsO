@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Главная</title>
+  <title>Catalog</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -20,111 +20,133 @@
           <li><a href="#">Клиенты</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          </ul>
+        </ul>
       </nav>
-        <span class="cart">
+      <div class="cart">
         <a href="#" class="icon-backet">Корзина</a>
-        </span>
-    </div>
-<!--SLIDER  -->
-  <div class="slider">
-    <input type="radio" id="btn-1" name="toggle" checked>
-    <input type="radio" id="btn-2" name="toggle">
-    <input type="radio" id="btn-3" name="toggle">
-    <div class="slider-controls">
-      <label for="btn-1"></label>
-      <label for="btn-2"></label>
-      <label for="btn-3"></label>
-    </div>
-    <div class="slides">
-      <div class="slide">
-        <div class="slide-text">
-          <div class="slide-title">Долго, дорого, скрупулезно</div>
-          <p>Математически выверенный дизайн
-          <br> для вашего сайта или мобильного приложения.</p>
-          <a class="btn" href="#">Узнать больше</a>
-        </div>
       </div>
-      <div class="slide">
-        <div class="slide-text">
-          <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
-          <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-          <a class="btn" href="#">Узнать больше</a>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="slide-text">
-          <div class="slide-title">Только наркотики,
-          <br>только хардкор!</div>
-          <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-          <a class="btn" href="#">Узнать больше</a>
-        </div>
-      </div>
-    </div>
-  </div>
+     </div>
+    <h1 class="title-catalog">Добро пожаловать в магазин готовых макетов</h1>
   </div>
 </header>
-<main class="container">
-  <div class="content clearfix">
-    <section class="web-site">
-      <img src="images/web-site.jpg" alt="computer" width="240" height="124">
-      <h3 class="text-title">Веб-сайты</h3>
-      <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-      <a href="#" class="btn btn-1">Заказать</a>
-    </section>
-    <section class="application">
-      <img src="images/application.jpg" alt="application" width="240" height="124">
-      <h3 class="text-title">Приложения</h3>
-      <p>Покорите топ-10 приложений
-      <br> в AppStore и Google Play</p>
-      <a href="#" class="btn btn-2">Заказать</a>
-    </section>
-    <section class="presentation">
-      <img src="images/presentation.jpg" alt="presentation" width="240" height="124">
-      <h3 class="text-title">Презентации</h3>
-      <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
-      <a href="#" class="btn btn-3">Заказать</a>
-    </section>
-  </div>
-  <div class="hr"></div>
-  <div class="content-text clearfix">
-    <p class="content-text-left">Мы &mdash; маленькая, но гордая дизайн&ndash;студия из Краснодара.</p>
-    <div class="content-text-2-right">
-      <img src="images/nerds-since.png" alt="logo" width="187" height="75">
+<main class="container clearfix">
+  <section class="form-price">
+    <b class="form-text">СТОИМОСТЬ:</b>
+    <div class="shape">
+      <span class="range"><span class="range-green"></span></span>
+      <span class="circle-min"></span>
+      <span class="circle-max"></span>
     </div>
-  </div>
-  <div class="content-text-2 clearfix">
-    <div class="content-text-2-left">
-    Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+    <div class="price">
+      <span class="price-value">ОТ</span>
+      <input type="text" class="min-price" value="0">
+      <span class="price-value">ДО</span>
+      <input type="text" class="max-price" value="15 000">
     </div>
-    <div class="since">Sinse 2004</div>
+    <b class="form-text">СЕТКА:</b>
+    <form action="#" class="form-grid">
+      <div class="form-list">
+        <input type="radio" id="adaptive" name="text" checked class="form-list">
+        <label for="adaptive">Адаптивная</label><br>
+      </div>
+      <div class="form-list">
+        <input type="radio" id="fixed" name="text" class="form-list">
+        <label for="fixed">Фиксированная</label><br>
+      </div>
+      <div class="form-list">
+        <input type="radio" id="rubber" name="text" class="form-list">
+        <label for="rubber">Резиновая</label>
+      </div>
+     </form>
+    <b class="form-text">ОСОБЕННОСТИ:</b>
+    <form action="#" class="form-grid">
+      <div class="form-list">
+        <input type="checkbox" id="slider" checked class="form-list">
+        <label for="slider">Слайдер</label><br>
+      </div>
+      <div class="form-list">
+        <input type="checkbox" id="block" class="form-list">
+        <label for="block">Блок преимуществ</label><br>
+      </div>
+      <div class="form-list">
+        <input type="checkbox" id="news" checked class="form-list">
+        <label for="news">Новости</label><br>
+      </div>
+      <div class="form-list">
+        <input type="checkbox" id="gallery" class="form-list">
+        <label for="gallery">Галерея</label><br>
+      </div>
+      <div class="form-list">
+        <input type="checkbox" id="basketgallery" class="form-list">
+        <label for="basketgallery">Корзина</label><br>
+      </div>
+    </form>
+    <button class="form-btn">Показать</button>
+  </section>
+  <section class="catalog-item">
+    <span class="catalog-item-sort">Сортировать:</span>
+    <ul class="catalog-sort">
+      <li><a href="#">по цене</a></li>
+      <li><a href="#">по типу</a></li>
+      <li><a href="#">по функционалу</a></li>
+    </ul>
+    <div class="sort">
+      <a href="#" class="sort-down">Вниз</a>
+      <a href="#" class="sort-up">Вверх</a>
+    </div> 
+  </section>
+  <div class="catalog__content-list">
+    <div class="catalog__content-item catalog__content-item__1">
+      <div class="a"></div>
+      <div class="a"></div>
+      <div class="a"></div>
+      <div class="catalog__content-item__header"></div>
+    </div>           
+    <div class="catalog__content-item catalog__content-item__2">
+      <div class="a"></div>
+      <div class="a"></div>
+      <div class="a"></div>
+      <div class="catalog__content-item__header"></div>
+    </div>          
+  <div class="catalog__content-item catalog__content-item__3">
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="catalog__content-item__header"></div>
+  </div>          
+  <div class="catalog__content-item catalog__content-item__4">
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="catalog__content-item__header"></div>
+  </div>          
+  <div class="catalog__content-item catalog__content-item__5">
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="catalog__content-item__header"></div>
+  </div>           
+  <div class="catalog__content-item catalog__content-item__6">
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="catalog__content-item__header"></div>
   </div>
-  <div class="content-text-3 clearfix">
-    <div class="content-text-3-left">
-      <p class="content-text-3-up">Выполняем заказы на разработку:</p>
-      <ul class="text-list">
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-    </div>
-    <div class="content-text-3-right">
-      <p class="content-text-3-up">Как мы работаем</p>
-      <ul class="text-list">
-        <li>С самоотдачей 146%</li>
-        <li>Соблюдая сроки на 100%</li>
-        <li>По предоплате 50%</li>
-      </ul>
-    </div>
+  <div class="paginator">
+    <ul>
+      <li class="paginator-catalog-active"><span href="#1">1</span></li>
+      <li><a href="#2">2</a></li>
+      <li><a href="#3">3</a></li>
+      <li class="paginator-catalog-btn"><a href="#4">Следущая</a></li>                
+    </ul>
   </div>
-  <div class="hr-2"></div>
-  <div class="portfolio clearfix">
-    <div class="clukhanko"></div>
-    <div class="htmlacademy"></div>
-    <div class="barbershop"></div>
+  <div class="modal-content modal-content-catalog">
+    <h2>Sunset</h2>
+    <p>Интернет-магазин<br> с личным кабинетом</p>
+    <a class="btn-1 modal-content-btn">10000 Р.</a>
   </div>
-  <div class="hr-3"></div>
-</main>
+  </div>
+</main> 
 <footer class="main-footer">
   <div class="page-map">
     <div class="map"></div>
@@ -153,25 +175,25 @@
   <div class="popup-content">
     <div class="popup-content-close" title="Закрыть"></div>
     <form class="login-form" action="/echo" method="post">
-    <div class="login-name">
-      <label for="login">Ваше имя:</label><br>
-      <input type="text" class="login-user" id="login" placeholder="Представьтесь, пожалуйста">
-    </div>
-    <div class="email-name">
-      <label for="email">Ваш e-mail:</label><br>
-      <input type="email" class="email-login" id="email" placeholder="Для отправки ответа">
-    </div>
-      <div class="content-form">
-      <label for="text">Текст письма:</label>    <br>
-      <textarea id="text" placeholder="В свободной форме"></textarea>
-    </div>
-    <div class="btn__block clearfix">
-      <button type="submit" class="btn btn__popup btn__popup__submit">Отправить</button>
-      <button type="submit" class="btn btn__popup btn__popup__close">Отмена</button>
-    </div>
+      <div class="login-name">
+        <label for="login">Ваше имя:</label><br>
+        <input type="text" class="login-user" id="login" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="email-name">
+        <label for="email">Ваш e-mail:</label><br>
+        <input type="email" class="email-login" id="email" placeholder="Для отправки ответа">
+      </div>
+        <div class="content-form">
+          <label for="text">Текст письма:</label><br>
+          <textarea id="text" placeholder="В свободной форме"></textarea>
+        </div>
+        <div class="btn__block clearfix">
+          <button type="submit" class="btn btn__popup btn__popup__submit">Отправить</button>
+          <button type="submit" class="btn btn__popup btn__popup__close">Отмена</button>
+        </div>
     </form>
   </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjrARCMb06Ux-J6Oa9F6MCF7pPTMC57wY"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjrARCMb06Ux-J6Oa9F6MCF7pPTMC57wY"></script>
     <!--Теперь сам скрипт инициализации нашей карты, тут все настраивается-->
     <script>
         //Заносим в две переменные х и у значения координат, их можно посмотреть в гугл картах, в адресной строке
@@ -232,5 +254,5 @@
             icon: markerImg
         })
     </script>
-</body>
+ </body>
 </html>
